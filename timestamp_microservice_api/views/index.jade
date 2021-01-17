@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Bradfield CSI Take-Home Exercise 3
+  h2 Time Stamp Microservice
+  p.red  Example Usage
+  code localhost:3000/time
+  br
+  p.red Expected Output in JSON
+  code { "time": "19:9:40" }
+  br
+  br
+  h2 Specifying a time zone
+  p.red  Example Usage
+  p Find a particular time zone like: 'Europe/Berlin'
+  p Add the timezone to the end of the API like:
+  br
+  code localhost:3000/time/Europe/Berlin
+  br
+  p.red Expected Output in JSON
+  code { "time": "19:9:40",
+        "location" : "Europe/Berlin" }
